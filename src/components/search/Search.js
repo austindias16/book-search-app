@@ -12,7 +12,7 @@ function Search() {
     setSearchTerm(e.target.value);
   };
 
-  let API_URL = `http://openlibrary.org/search.json`;
+  let API_URL = `https://openlibrary.org/search.json`;
 
   const fetchBooks = async () => {
     const result = await axios.get(`${API_URL}?q=${searchTerm}`);
