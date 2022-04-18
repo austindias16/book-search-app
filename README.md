@@ -8,13 +8,13 @@
 - How long did you spend on the coding assignment?
 
   > I spent around 8 hours for this assignment. This included the following tasks:
-  > -- UI creation
-  > -- Theme creation and styling
-  > -- API service integration & Data modeling for UI
+   - UI creation
+   - Theme creation and styling
+   - API service integration & Data modeling for UI
 
 - a. What would you add to your solution if you had more time?
 - b. If you didn&#39;t spend much time on the coding test, then use this as an opportunity to explain what you would add.
-> With better UX, design and more time, I would have added more UI indicators like spinners, missing image placeholders, a different route to display a detailed description of each book title.
+> With better UX, design and more time, I would have added more UI indicators like spinners, missing image placeholders, a different route to display a detailed description of each book title. Also I would add more test cases.
 
 - What was the most useful feature that was added to the latest version of your chosen
   language? Please include a snippet of code that shows how you&#39;ve used it.
