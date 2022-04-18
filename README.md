@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+[Github Profile](https://github.com/austindias16)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Repository](https://github.com/austindias16/book-search-app)
 
-## Available Scripts
+[Github Pages Link](https://austindias16.github.io/book-search-app/)
 
-In the project directory, you can run:
 
-### `npm start`
+- How long did you spend on the coding assignment?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  > I spent around 8 hours for this assignment. This included the following tasks:
+  > -- UI creation
+  > -- Theme creation and styling
+  > -- API service integration & Data modeling for UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- a. What would you add to your solution if you had more time?
+- b. If you didn&#39;t spend much time on the coding test, then use this as an opportunity to explain what you would add.
+> With better UX, design and more time, I would have added more UI indicators like spinners, missing image placeholders, a different route to display a detailed description of each book title.
 
-### `npm test`
+- What was the most useful feature that was added to the latest version of your chosen
+  language? Please include a snippet of code that shows how you&#39;ve used it.
+  > There are a lot of new features in the new version of React like Concurrency. But since the question is about what is being used in the app, I would speak of hooks. Hooks are not exactly new but are very useful. Because of the introduction of hooks, state can be used in functional components which was not the case in the past.
+- How would you track down a performance issue in production? Have you ever had to do this?
+  > Use generated reports from lighthouse, React Profiler, check Network latencies, reduce number of API calls and use caching for data that does not change very often
+- How would you improve the API that you just used?
+  > values in the API response body are not uniform. Book title published date have improper dates while some have only year, Book title image URLs for the cover are blank.
+- Please describe yourself using correctly formatted JSON.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+{
 
-### `npm run build`
+"name": "Austin",
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+"last_name": "Dias",
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+"nationality": "India",
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"lives_in": "Canada",
 
-### `npm run eject`
+"education": "Bachelor of Computer Engineering",
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+"years_of_experience": 6,
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+"last_professional_designation": "Senior Consultant"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+}
+```
