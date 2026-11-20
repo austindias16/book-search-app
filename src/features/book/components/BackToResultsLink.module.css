@@ -1,0 +1,12 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--ant-color-text-secondary);
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--ant-color-primary);
+}

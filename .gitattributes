@@ -1,0 +1,4 @@
+# Keep LF everywhere so checkouts match Prettier's endOfLine (lf), regardless of core.autocrlf.
+* text=auto eol=lf
+*.png binary
+*.ico binary

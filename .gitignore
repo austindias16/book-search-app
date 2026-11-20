@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build & test output
+dist/
+coverage/
+*.tsbuildinfo
+
+# env
+.env*.local
+
+# logs
+npm-debug.log*
+
+# editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Playwright MCP browser artifacts
+.playwright-mcp/

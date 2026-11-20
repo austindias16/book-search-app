@@ -1,0 +1,73 @@
+/** All user-visible copy. Functions interpolate values. */
+export const STRINGS = {
+  app: {
+    name: 'Shelf',
+    documentTitle: 'Shelf — Book Search',
+    titleSuffix: ' · Shelf',
+    attribution: 'Book data and covers from',
+    openLibrary: 'Open Library',
+  },
+  search: {
+    eyebrow: 'Twenty million books, one search box',
+    heroBefore: 'Find your next',
+    heroAccent: 'great',
+    heroAfter: 'read.',
+    placeholder: 'Title, author, or subject…',
+    inputLabel: 'Search books by title, author or subject',
+    searchButton: 'Search',
+    clearSearch: 'Clear search',
+    searchingIndicator: 'Searching',
+    try: 'Try',
+    resultsCount: (count: string, query: string, isSingular: boolean) =>
+      `${count} ${isSingular ? 'result' : 'results'} for “${query}”`,
+    searching: (query: string) => `Searching for “${query}”…`,
+    showing: (shown: string, total: string) => `Showing ${shown} of ${total}`,
+    loadMore: 'Load more',
+    loadingMore: 'Loading…',
+    loadMoreError: 'Couldn’t load more books.',
+    resultsListLabel: 'Search results',
+    loadingResultsLabel: 'Loading results',
+  },
+  sort: {
+    label: 'Sort by',
+    labels: {
+      relevance: 'Most relevant',
+      new: 'Newest first',
+      old: 'Oldest first',
+      title: 'Title (A–Z)',
+    },
+  },
+  book: {
+    loadingLabel: 'Loading book',
+    untitled: 'Untitled',
+    backToResults: 'Back to results',
+    backToSearch: 'Search books',
+    by: 'by',
+    firstPublished: 'First published',
+    noDescription: 'No description available for this book.',
+    subjects: 'Subjects',
+    viewOnOpenLibrary: 'View on Open Library',
+    coverAlt: (title: string) => `Cover of ${title}`,
+    noCoverAlt: (title: string) => `No cover available for ${title}`,
+  },
+  status: {
+    emptyTitle: 'No books found',
+    emptyBody: (query: string) =>
+      `Nothing matched “${query}”. Try a different spelling, an author’s surname, or a broader subject.`,
+    errorTitle: 'Something went wrong',
+    errorBody: 'We couldn’t reach Open Library. Check your connection and try again.',
+    retry: 'Try again',
+    notFoundTitle: 'Book not found',
+    notFoundBody: 'Open Library doesn’t have a work with that id.',
+    pageNotFoundTitle: 'This page has gone out of print.',
+    pageNotFoundDocumentTitle: 'Page not found',
+    backHome: 'Back to search',
+  },
+  theme: {
+    toLight: 'Switch to light theme',
+    toDark: 'Switch to dark theme',
+  },
+  errors: {
+    httpStatus: (status: number) => `Open Library responded with ${status}`,
+  },
+} as const

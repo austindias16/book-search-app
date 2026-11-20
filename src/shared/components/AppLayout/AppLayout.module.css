@@ -1,0 +1,33 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+  background: color-mix(in srgb, var(--ant-color-bg-layout) 85%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ant-color-split);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ant-color-text);
+}
+
+.footer {
+  border-top: 1px solid var(--ant-color-split);
+  color: var(--ant-color-text-secondary);
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

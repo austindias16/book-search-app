@@ -1,0 +1,11 @@
+export const TEST_QUERY = 'dune'
+export const EMPTY_QUERY = 'nothing'
+export const TEST_TOTAL = 30
+export const TEST_PAGE_SIZE = 24
+export const TEST_WORK_ID = 'OL27448W'
+export const TEST_WORK_TITLE = 'The Left Hand of Darkness'
+export const TEST_WORK_AUTHOR = 'Ursula K. Le Guin'
+export const TEST_WORK_DESCRIPTION = 'A story about Gethen.'
+export const TEST_SUBJECTS = ['Science fiction', 'Gender'] as const
+export const TEST_SORT_PARAM = 'new'
+export const MISSING_WORK_ID = 'NOPE'

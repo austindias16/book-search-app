@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search millions of books from Open Library." />
+    <meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/book.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shelf — Book Search</title>
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      // Keep the key ('theme') and colours in sync with src/constants/storage.ts and theme.ts.
+      try {
+        const t = localStorage.getItem('theme')
+        const dark = t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)
+        const root = document.documentElement
+        root.dataset.theme = dark ? 'dark' : 'light'
+        root.style.background = dark ? '#16130f' : '#f6f1e7'
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

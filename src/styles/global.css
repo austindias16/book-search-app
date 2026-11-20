@@ -1,0 +1,26 @@
+/*
+ * Only app-wide rules live here. Colours come from antd tokens (cssVar mode).
+ * --font-serif must match FONT_FAMILY.serif in src/constants/theme.ts.
+ */
+:root {
+  --font-serif: 'Fraunces', Georgia, serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings use the serif face; body text uses the antd sans token. */
+.ant-typography:is(h1, h2, h3, h4, h5) {
+  font-family: var(--font-serif);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
