@@ -40,6 +40,17 @@ The dev server opens at `http://localhost:5173/book-search-app/`.
 | `npm run typecheck`     | Typecheck without building         |
 | `npm run format`        | Format with Prettier               |
 
+## Deployment
+
+Every push to `main` deploys to GitHub Pages via [.github/workflows/deploy.yml](.github/workflows/deploy.yml):
+lint, test, build, then publish `dist/`. The site is served at
+`https://<user>.github.io/book-search-app/`, which matches Vite's `base` and the router basename.
+
+Pages has no rewrite rules, so `postbuild` copies `index.html` to `404.html`. A deep link such as
+`/book-search-app/works/OL27448W` then loads the app, and React Router renders the right page.
+
+One-time setup: in the repository's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
 ## Project layout
 
 ```

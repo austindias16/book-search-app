@@ -15,7 +15,8 @@
     "format": "prettier --write .",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "postbuild": "node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\""
   },
   "dependencies": {
     "@ant-design/icons": "^6.3.4",
